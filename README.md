@@ -1,4 +1,4 @@
-# Trybe
+# o/
 
 Este repositório contém todas as atividades de aprendizagem desenvolvidas por _[mim](https://www.linkedin.com/in/victor-stettner/)_ durante minha jornada pela [Trybe](https://www.betrybe.com/) :rocket:
 
