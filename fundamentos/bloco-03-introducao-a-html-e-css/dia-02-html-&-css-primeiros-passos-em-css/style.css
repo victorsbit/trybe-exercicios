@@ -1,12 +1,28 @@
+body {
+    font-size: 16px;
+}
+
 h1 {
     font-size: 65px;
     color: orange;
+    text-align: center;
+    text-decoration: underline;
 }
 
 ul {
     background-color: azure;
+    line-height: 25px;
 }
 
 .bcolor {
     background-color: cadetblue;
+}
+
+h1 {
+    font-family: sans-serif;
+}
+
+p {
+    font-size: 3em;
+    font-weight: 600;
 }
