@@ -1,0 +1,33 @@
+div:hover {
+    border: black 2px dashed;
+}
+
+#primary {
+    color: white;
+    background-color: red;
+}
+
+#secondary {
+    color: white;
+    background-color: green;
+}
+
+#complementary {
+    color: white;
+    background-color: gray;
+    padding: 5px;
+}
+
+#dark-color {
+    color: white;
+    background-color: darkblue;
+}
+
+#light-color {
+    color: white;
+    background-color: thistle;
+}
+
+h3 {
+    font-style: italic;
+}
