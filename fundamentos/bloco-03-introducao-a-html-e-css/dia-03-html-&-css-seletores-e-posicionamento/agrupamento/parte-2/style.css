@@ -1,5 +1,5 @@
 div:hover {
-    border: cadetblue 2px dashed;
+    border: black 2px dashed;
 }
 
 #primary {
@@ -15,6 +15,7 @@ div:hover {
 #complementary {
     color: white;
     background-color: gray;
+    padding: 5px;
 }
 
 #dark-color {
@@ -25,4 +26,8 @@ div:hover {
 #light-color {
     color: white;
     background-color: thistle;
+}
+
+h3 {
+    font-style: italic;
 }
