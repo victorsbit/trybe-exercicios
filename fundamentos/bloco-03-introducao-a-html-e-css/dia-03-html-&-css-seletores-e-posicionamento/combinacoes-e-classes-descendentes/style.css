@@ -26,3 +26,11 @@ li {
 ol.italico li {
     font-weight: bold;
 }
+
+ul.linguagem li:nth-of-type(-n+3) {
+    color: blue;
+}
+
+/* ul.linguagem li[string="Java"] {
+    background-color: pink;
+} */
