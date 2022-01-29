@@ -31,6 +31,32 @@ ul.linguagem li:nth-of-type(-n+3) {
     color: blue;
 }
 
-/* ul.linguagem li[string="Java"] {
+ul.linguagem li[class*="bgpink"] {
     background-color: pink;
-} */
+}
+
+/* --------- Bonus --------- */
+
+ul.aliados li:hover {
+    font-weight: bold;
+}
+
+ul.aliados li a[href*="stackoverflow"] {
+    color: orange;
+}
+
+ul.aliados li a[href*="w3schools"] {
+    color: green;
+}
+
+ul.aliados li a[href*="mozilla"] {
+    color: black;
+}
+
+ul.aliados li a[href*="devdocs"] {
+    color: yellow;
+}
+
+ul.aliados li a[href*="trybe"] {
+    color: green;
+}
