@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+}
+
+header {
+    background: coral;
+    padding: 10px;
+}
+
+main {
+    text-align: center;
+}
+
+article {
+    background-color: aquamarine;
+}
+
+h2, h3 {
+    margin: 10px;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.fato {
+    background-color: beige;
+    text-align: center;
+    display: inline-block;
+    width: 500px;
+    height: 500px;
+    margin: 2px;
+}
+
+.info-tabular {
+    font-size: 14px;
+}
+
+.even-stronger {
+    font-size: 20px;
+}
