@@ -8,7 +8,7 @@ O programa conta com mais de 1.500 horas de aulas online, aborda introdução ao
 
 ## Fundamentos do Desenvolvimento Web :heavy_check_mark:
 
-##### Bloco 1: Introdução - Unix & Shell
+##### Bloco 1: [Introdução - Unix & Shell](https://github.com/victorsbit/trybe-exercicios/tree/master/fundamentos/bloco-01-unix-e-shell)
 
 - [x] 1-3: _Unix & Shell- Part 1_
 - [x] 1-4: _Unix & Shell- Part 2_
@@ -25,7 +25,7 @@ O programa conta com mais de 1.500 horas de aulas online, aborda introdução ao
 - [x] 3-2: _HTML & CSS - Primeiros passos em CSS_
 - [x] 3-3: _HTML & CSS - Seletores e posicionamento_
 - [x] 3-4: _HTML Semântico_
-- [x] 3-5: _[Projeto - HTML & CSS]()_
+- [x] 3-5: _Projeto - HTML & CSS_
 
 ##### Bloco 4: Introdução - JavaScript :hourglass_flowing_sand:
 
