@@ -27,7 +27,7 @@ O programa conta com mais de 1.500 horas de aulas online, aborda introdução ao
 - [x] 3-4: _HTML Semântico_
 - [x] 3-5: _Projeto - HTML & CSS_
 
-##### Bloco 4: [Introdução - JavaScript](https://github.com/victorsbit/trybe-exercicios/tree/master/fundamentos/bloco-04-introducao-a-javascript-e-logica-de-programacao/dia-01-javascript-primeiros-passos) :hourglass_flowing_sand:
+##### Bloco 4: [Introdução - JavaScript](https://github.com/victorsbit/trybe-exercicios/tree/master/fundamentos/bloco-04-introducao-a-javascript-e-logica-de-programacao/dia-01-javascript-primeiros-passos)
 
 - [x] 4-1: _JavaScript - Primeiros passos_
 - [ ] 4-2: _JavaScript - Array e loop For_
