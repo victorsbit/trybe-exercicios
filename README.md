@@ -13,13 +13,13 @@ O programa conta com mais de 1.500 horas de aulas online, aborda introdução ao
 - [x] 1-3: _Unix & Shell- Part 1_
 - [x] 1-4: _Unix & Shell- Part 2_
 
-##### Bloco 2: Git & GitHub
+##### Bloco 2: [Git & GitHub](https://github.com/victorsbit/trybe-exercicios/tree/master/fundamentos/bloco-02-git-github-e-internet)
 
 - [x] 2-1: _O que são e para que serve?_
 - [x] 2-2: _Entendendo os comandos_
 - [X] 2-3: _Internet - Entendendo como ela funciona_
 
-##### Bloco 3: Introdução - HTML & CSS
+##### Bloco 3: [Introdução - HTML & CSS](https://github.com/victorsbit/trybe-exercicios/tree/master/fundamentos/bloco-03-introducao-a-html-e-css)
 
 - [x] 3-1: _HTML & CSS - Estruturas de página_
 - [x] 3-2: _HTML & CSS - Primeiros passos em CSS_
@@ -27,7 +27,7 @@ O programa conta com mais de 1.500 horas de aulas online, aborda introdução ao
 - [x] 3-4: _HTML Semântico_
 - [x] 3-5: _Projeto - HTML & CSS_
 
-##### Bloco 4: Introdução - JavaScript :hourglass_flowing_sand:
+##### Bloco 4: [Introdução - JavaScript](https://github.com/victorsbit/trybe-exercicios/tree/master/fundamentos/bloco-04-introducao-a-javascript-e-logica-de-programacao/dia-01-javascript-primeiros-passos) :hourglass_flowing_sand:
 
 - [x] 4-1: _JavaScript - Primeiros passos_
 - [ ] 4-2: _JavaScript - Array e loop For_
