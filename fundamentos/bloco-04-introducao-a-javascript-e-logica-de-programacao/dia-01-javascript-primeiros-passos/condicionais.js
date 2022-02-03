@@ -9,3 +9,22 @@ if (nota >=  80) {
 } else {
     console.log("Nota invalida.");
 }
+
+let statusCandidato = "burro";
+
+switch (statusCandidato) {
+    case "aprovado":
+        console.log("Parabens, voce foi aprovado(a)!");
+        break;
+
+    case "lista":
+        console.log("Vocẽ está na lista de espera.");
+        break;
+
+    case "reprovado":
+        console.log("Você foi reprovado(a).");
+        break;
+    
+    default:
+        console.log("Não se aplica.");
+}
