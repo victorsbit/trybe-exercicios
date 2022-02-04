@@ -88,3 +88,26 @@ for (index = 0; index < numbers.length; index += 1) {
 }
 
 console.log(min);
+
+// Exercício 8
+
+let list = [];
+
+for (let index = 1; index < 26; index += 1) {
+    list.push(index);
+}
+
+console.log(list);
+
+// Exercício 9
+
+let list = [];
+let div = [];
+
+for (let index = 1; index < 26; index += 1) {
+    list.push(index);
+    div.push(index / 2);
+}
+
+console.log(list);
+console.log(div);
