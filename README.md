@@ -30,7 +30,7 @@ O programa conta com mais de 1.500 horas de aulas online, aborda introdução ao
 ##### Bloco 4: [Introdução - JavaScript](https://github.com/victorsbit/trybe-exercicios/tree/master/fundamentos/bloco-04-introducao-a-javascript-e-logica-de-programacao/dia-01-javascript-primeiros-passos)
 
 - [x] 4-1: _JavaScript - Primeiros passos_
-- [ ] 4-2: _JavaScript - Array e loop For_
+- [x] 4-2: _JavaScript - Array e loop For_
 - [ ] 4-3: _JavaScript - Lógica de Programação e Algoritmos_
 - [ ] 4-4: _JavaScript - Objetos e funções_
 - [ ] 4-5: _Projeto - Playground Functions_
