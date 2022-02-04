@@ -26,12 +26,39 @@ let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 
 // Exercício 3
 
-let total = 0;
-let media = 0;
+// let total = 0;
+// let media = 0;
+
+// for (index = 0; index < numbers.length; index += 1) {
+//     total += numbers[index];
+//     media = total / numbers.length;
+// }
+
+// console.log(media);
+
+// Exercício 4
+
+// let total = 0;
+// let media = 0;
+
+// for (index = 0; index < numbers.length; index += 1) {
+//     total += numbers[index];
+// }
+
+// media = total / numbers.length;
+
+// if (media > 20) {
+//     console.log('valor maior que 20');
+// } else if (media < 20) {
+//     console.log('valor menor que 20');
+// }
+
+// Exercício 5 | Referência: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/max
+
+let max = 0;
 
 for (index = 0; index < numbers.length; index += 1) {
-    total += numbers[index];
-    media = total / numbers.length;
+    max = Math.max(...numbers);
 }
 
-console.log(media);
+console.log(max);
