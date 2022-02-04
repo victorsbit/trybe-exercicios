@@ -63,16 +63,28 @@ let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 
 // console.log(max);
 
-let impar = 0;
-let contadorImpar = 0;
+// Exercício 6
+
+// let impar = 0;
+// let contadorImpar = 0;
+
+// for (index = 0; index < numbers.length; index += 1) {
+//     impar = numbers[index] % 2;
+//     if (impar != 0) {
+//         contadorImpar += 1;
+//     } else if (contadorImpar === 0) {
+//         console.log('Nenhum valor ímpar encontrado');
+//     }
+// }
+
+// console.log(contadorImpar);
+
+// Exercício 7
+
+let min = 0;
 
 for (index = 0; index < numbers.length; index += 1) {
-    impar = numbers[index] % 2;
-    if (impar != 0) {
-        contadorImpar += 1;
-    } else if (contadorImpar === 0) {
-        console.log('Nenhum valor ímpar encontrado');
-    }
+    min = Math.min(...numbers);
 }
 
-console.log(contadorImpar);
+console.log(min);
