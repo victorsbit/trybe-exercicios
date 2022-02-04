@@ -55,10 +55,24 @@ let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 
 // Exercício 5 | Referência: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/max
 
-let max = 0;
+// let max = 0;
+
+// for (index = 0; index < numbers.length; index += 1) {
+//     max = Math.max(...numbers);
+// }
+
+// console.log(max);
+
+let impar = 0;
+let contadorImpar = 0;
 
 for (index = 0; index < numbers.length; index += 1) {
-    max = Math.max(...numbers);
+    impar = numbers[index] % 2;
+    if (impar != 0) {
+        contadorImpar += 1;
+    } else if (contadorImpar === 0) {
+        console.log('Nenhum valor ímpar encontrado');
+    }
 }
 
-console.log(max);
+console.log(contadorImpar);
