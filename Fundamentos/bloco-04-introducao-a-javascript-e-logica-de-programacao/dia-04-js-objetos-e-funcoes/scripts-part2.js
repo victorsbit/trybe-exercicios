@@ -34,3 +34,12 @@ function verificaPalindromo(palindromo) {
 }
 
 console.log(verificaPalindromo('banana'));
+
+// Exercício 2 | Referências: https://flaviocopes.com/how-to-get-index-item-array-javascript/ e https://stackoverflow.com/questions/1669190/find-the-min-max-element-of-an-array-in-javascript
+
+function maiorIndice(numeros) { // Função recebe o parametro 'numeros' que será definido como uma array no momento que a função for chamada
+  maiorIndice = numeros.indexOf(Math.max(...numeros)); // Essa linha é responsável por encontrar o index do maior número encontrado na Array atravẽs da propriedade 'Math.max'.
+  return maiorIndice;
+}
+
+console.log(maiorIndice([1, 5, 50, 2, 4, 5, 7, 700]));
