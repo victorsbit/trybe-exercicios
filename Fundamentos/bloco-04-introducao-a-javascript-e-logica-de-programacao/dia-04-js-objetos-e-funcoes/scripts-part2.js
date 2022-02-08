@@ -43,3 +43,12 @@ function maiorIndice(numeros) { // Função recebe o parametro 'numeros' que ser
 }
 
 console.log(maiorIndice([1, 5, 50, 2, 4, 5, 7, 700]));
+
+// Exercício 3
+
+function maiorIndice(numeros) {
+  maiorIndice = numeros.indexOf(Math.min(...numeros));
+  return maiorIndice;
+}
+
+console.log(maiorIndice([10, 5, 50, 2, 4, 5, 7, 700]));
