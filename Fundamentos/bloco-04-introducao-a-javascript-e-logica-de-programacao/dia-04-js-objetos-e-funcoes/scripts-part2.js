@@ -15,3 +15,22 @@ function verificaPalindromo(palindromo) {
 }
 
 console.log(verificaPalindromo('banana'));
+
+// Exercício 1 usando loop
+
+let string = [];
+
+function verificaPalindromo(palindromo) {
+  for (let index = palindromo.length; index >= 0; index -= 1) {
+    string.push(palindromo[index]);
+  }
+
+  string = string.join('');
+  if (string === palindromo) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+console.log(verificaPalindromo('banana'));
