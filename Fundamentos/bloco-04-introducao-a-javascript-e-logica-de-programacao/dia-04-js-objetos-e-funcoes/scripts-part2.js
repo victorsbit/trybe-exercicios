@@ -46,9 +46,9 @@ console.log(maiorIndice([1, 5, 50, 2, 4, 5, 7, 700]));
 
 // Exercício 3
 
-function maiorIndice(numeros) {
-  maiorIndice = numeros.indexOf(Math.min(...numeros));
-  return maiorIndice;
+function menorIndice(numeros) {
+  menorIndice = numeros.indexOf(Math.min(...numeros));
+  return menorIndice;
 }
 
-console.log(maiorIndice([10, 5, 50, 2, 4, 5, 7, 700]));
+console.log(menorIndice([10, 5, 50, 2, 4, 5, 7, 700]));
