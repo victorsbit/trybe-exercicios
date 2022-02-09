@@ -11,7 +11,7 @@
         border-style: solid;
       }
 
-      .title {
+      #title {
         text-align: center;
       }
 
@@ -32,7 +32,7 @@
   </head>
   <body>
     <header> 
-      <h1 class="title">Exercício 5.1 - JavaEscripito </h1>
+      <h1 id="title">Exercício 5.1 - JavaEscripito </h1>
     </header>    
     <main class="main-content">
       <section class="center-content">
@@ -69,10 +69,19 @@
 
         changeBiggerSquare('rgb(76,164,109)');
 
-        //3
+        // 3
         function changeSmallerSquare(color) {
           document.getElementsByClassName('center-content')[0].style.backgroundColor = color;
         }
+
+        changeSmallerSquare('white');
+
+        // 4
+        function fixTitle() {
+          document.getElementById('title').innerText = 'Exercício 5.1 - JavaScript';
+        }
+
+        fixTitle();
 
     </script>
   </body>
