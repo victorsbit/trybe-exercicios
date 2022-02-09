@@ -86,9 +86,12 @@
 
         // 5 | Ref: https://www.w3schools.com/jsref/prop_style_texttransform.asp
         function pToLowerCase() {
-          /* document.getElementsByTagName('p')[0].style.textTransform = 'lowercase';
+          
+          /*
+          document.getElementsByTagName('p')[0].style.textTransform = 'lowercase';
           document.getElementsByTagName('p')[1].style.textTransform = 'lowercase';
-          document.getElementsByTagName('p')[2].style.textTransform = 'lowercase'; */
+          document.getElementsByTagName('p')[2].style.textTransform = 'lowercase';
+          */
 
           let toLowerCase = document.querySelectorAll('p');
           for (let index = 0; index < toLowerCase.length; index += 1) {
@@ -97,7 +100,15 @@
         }
 
         pToLowerCase();
-        
+
+        // 6
+        function allPTags() {
+          let allP = document.getElementsByTagName('p');
+          console.log(allP);
+        }
+
+        allPTags();
+
     </script>
   </body>
 </html>
