@@ -42,6 +42,7 @@
       </section>
     </main>
     <script>
+
         /*
         Aqui você vai modificar os elementos já existentes utilizando apenas as funções:
         - document.getElementById()
@@ -83,6 +84,20 @@
 
         fixTitle();
 
+        // 5 | Ref: https://www.w3schools.com/jsref/prop_style_texttransform.asp
+        function pToLowerCase() {
+          /* document.getElementsByTagName('p')[0].style.textTransform = 'lowercase';
+          document.getElementsByTagName('p')[1].style.textTransform = 'lowercase';
+          document.getElementsByTagName('p')[2].style.textTransform = 'lowercase'; */
+
+          let toLowerCase = document.querySelectorAll('p');
+          for (let index = 0; index < toLowerCase.length; index += 1) {
+            toLowerCase[index].style.textTransform = 'lowercase';
+          }
+        }
+
+        pToLowerCase();
+        
     </script>
   </body>
 </html>
