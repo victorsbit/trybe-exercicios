@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+  <header>
+    <h2 id="page-title">Título</h2>
+    <p id="paragraph" class="pagarafo">Dê uma cor para este parágrafo!</p>
+    <h4 id="subtitle">Subtítulo</h4>
+    <p id="second-paragraph" class="pagarafo">Segundo parágrafo!</p>
+  </header>
+  <script>
+    const paragraph = document.getElementById("paragraph");
+    paragraph.style.color = "red";
+
+    let titulo = document.getElementById("page-title");
+    titulo.innerText = 'A volta dos que nao foram';
+
+    let segundoPar = document.getElementById("second-paragraph");
+    segundoPar.style.fontFamily = "verdana";
+
+    // let sub = document.getElementById("second-paragraph");
+    // subtitle.style.fontFamily = "verdana";
+
+    let pagarafo = document.getElementsByClassName("pagarafo");
+    pagarafo[0].style.color = "green";
+
+    let sub = document.getElementsByTagName("h4");
+    sub[0].style.color = "gray";
+
+  </script>
+</body>
+
+</html>
