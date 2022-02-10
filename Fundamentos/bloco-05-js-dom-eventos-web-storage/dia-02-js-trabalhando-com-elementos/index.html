@@ -53,6 +53,7 @@
 
       .main-content .right-content {
         background-color: blue;
+        color: white;
         width: 60%;
         margin-left: auto;
         margin-right: 0;
@@ -102,6 +103,19 @@
       img.className = 'small-image';
       img.src = 'https://picsum.photos/200'; // Ref: https://www.geeksforgeeks.org/html-dom-image-src-property/#:~:text=The%20HTML%20DOM%20Image%20src,Returns%20the%20image%20src%20property.
       document.getElementsByClassName('left-content')[0].appendChild(img);
+
+      // 8
+      let list = document.createElement('ul');
+      document.getElementsByClassName('right-content')[0].appendChild(list);
+
+      let extenso = ['um', 'dois', 'tres', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];
+
+      for (let index = 0; index < extenso.length; index += 1) {
+        let liList = document.createElement('li');
+        liList.innerText = extenso[index];
+        document.getElementsByTagName('ul')[0].appendChild(liList);
+      }
+
     </script>
   </body>
 </html>
