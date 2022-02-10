@@ -64,9 +64,14 @@
       // COLOQUE SEU CÓDIGO AQUI
 
       // 1
-      let tagH1 = document.createElement('h1');
-      tagH1.innerText = 'Exercício 5.2 - JavaScript DOM'
-      document.querySelector('body').appendChild(tagH1);
+      let tagH1 = document.createElement('h1'); // Atribui o retorno da criacao do elemento a variavel 'tagH1'
+      tagH1.innerText = 'Exercício 5.2 - JavaScript DOM' // Insere uma string ao elemento HTML referenciado atraves da variavel
+      document.querySelector('body').appendChild(tagH1); // Anexa ao DOM como filho do body
+
+      // 2
+      let main = document.createElement('main');
+      main.className = 'main-content'
+      document.querySelector('body').appendChild(main);
 
     </script>
   </body>
