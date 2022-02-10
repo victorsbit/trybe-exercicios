@@ -56,7 +56,7 @@
         color: white;
         width: 60%;
         margin-left: auto;
-        margin-right: 0;
+        margin-right: auto;
       }
 
       .main-content .description {
@@ -71,6 +71,7 @@
       // 1
       let tagH1 = document.createElement('h1'); // Atribui o retorno da criacao do elemento a variavel 'tagH1'
       tagH1.innerText = 'Exercício 5.2 - JavaScript DOM'; // Insere uma string ao elemento HTML referenciado atraves da variavel
+      tagH1.className = 'title';
       document.querySelector('body').appendChild(tagH1); // Anexa ao DOM como filho do body
 
       // 2
@@ -119,14 +120,40 @@
       // 9
       let firstH3 = document.createElement('h3');
       firstH3.innerText = 'H3';
+      firstH3.className = 'description';
       let secondH3 = document.createElement('h3');
       secondH3.innerText = 'H3';
+      secondH3.className = 'description';
       let thirdH3 = document.createElement('h3');
       thirdH3.innerText = 'H3';
+      thirdH3.className = 'description';
 
       document.getElementsByClassName('main-content')[0].appendChild(firstH3);
       document.getElementsByClassName('main-content')[0].appendChild(secondH3);
       document.getElementsByClassName('main-content')[0].appendChild(thirdH3);
+
+      // Alterações
+
+      // 1: Linha 74
+
+      // 2: Linhas 123, 126 e 129
+
+      // 3
+      let mainParent = document.getElementsByClassName('main-content')[0];
+      leftSection = document.getElementsByClassName('left-content')[0];
+      let removeLeftSection = mainParent.removeChild(leftSection);
+
+      // 4: Linha 59
+      
+      // 5
+      section.style.backgroundColor = 'green';
+
+      // 6
+      let lastLi = list.lastElementChild; // remove o décimo li
+      lastLi.remove();
+
+      lastLi = list.lastElementChild; // remove o nono li
+      lastLi.remove();      
 
     </script>
   </body>
