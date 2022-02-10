@@ -42,3 +42,11 @@ let child = document.createElement('section');
 document.getElementById('elementoOndeVoceEsta').appendChild(child);
 document.getElementById('elementoOndeVoceEsta').lastElementChild.innerText = 'test';
 
+// 3
+let child2 = document.createElement('section');
+document.getElementById('primeiroFilhoDoFilho').appendChild(child2);
+document.getElementById('primeiroFilhoDoFilho').lastElementChild.innerText = 'test2';
+
+// 4
+let grandChild = document.getElementById('primeiroFilhoDoFilho').firstChild;
+console.log(grandChild);
