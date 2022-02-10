@@ -88,10 +88,14 @@
       document.getElementsByClassName('center-content')[0].appendChild(pTag);
 
       // 5
-      let section2 = document.createElement('section');
-      section2.className = 'left-content';
-      document.getElementsByClassName('main-content')[0].appendChild(section2);
+      let leftSection = document.createElement('section');
+      leftSection.className = 'left-content';
+      document.getElementsByClassName('main-content')[0].appendChild(leftSection);
 
+      // 6
+      let rightSection = document.createElement('section');
+      rightSection.className = 'right-content';
+      document.getElementsByClassName('main-content')[0].appendChild(rightSection);
 
     </script>
   </body>
