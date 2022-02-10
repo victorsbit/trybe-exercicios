@@ -30,7 +30,7 @@ console.log(document.getElementById('elementoOndeVoceEsta').nextElementSibling);
 // 8
 console.log(document.getElementById('pai').lastElementChild.previousElementSibling);
 */
-
+/* 
 // Parte 2
 
 // 1
@@ -49,4 +49,21 @@ document.getElementById('primeiroFilhoDoFilho').lastElementChild.innerText = 'te
 
 // 4
 let grandChild = document.getElementById('primeiroFilhoDoFilho').firstChild;
-console.log(grandChild);
+// console.log(grandChild);
+ */
+
+// Parte 3
+
+// Remove primeiroFilho
+let removePrimeiroFilho = document.getElementById('paiDoPai').firstElementChild.firstElementChild;
+removePrimeiroFilho.remove();
+
+// Remove segundoEUltimoFilho
+let removeSegundoEUltimoFilho = document.getElementById('elementoOndeVoceEsta').lastElementChild;
+removeSegundoEUltimoFilho.remove();
+
+let removeTerceiroFilho =  document.getElementById('pai').lastElementChild.previousElementSibling;
+removeTerceiroFilho.remove();
+
+let removeQuartoEUltimoFilho = document.getElementById('pai').lastElementChild;
+removeQuartoEUltimoFilho.remove();
