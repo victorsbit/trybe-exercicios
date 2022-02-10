@@ -33,5 +33,12 @@ console.log(document.getElementById('pai').lastElementChild.previousElementSibli
 
 // Parte 2
 
+// 1
 let sibling = document.createElement('section');
 document.getElementById('pai').appendChild(sibling);
+
+// 2
+let child = document.createElement('section');
+document.getElementById('elementoOndeVoceEsta').appendChild(child);
+document.getElementById('elementoOndeVoceEsta').lastElementChild.innerText = 'test';
+
