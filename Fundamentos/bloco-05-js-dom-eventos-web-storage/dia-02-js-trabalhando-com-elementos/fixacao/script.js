@@ -55,15 +55,22 @@ let grandChild = document.getElementById('primeiroFilhoDoFilho').firstChild;
 // Parte 3
 
 // Remove primeiroFilho
+
+function removeElement(element) {
+  element.remove();
+}
+
+// selectiona primeiroFilho
 let removePrimeiroFilho = document.getElementById('paiDoPai').firstElementChild.firstElementChild;
-removePrimeiroFilho.remove();
 
-// Remove segundoEUltimoFilho
+// selectiona segundoEUltimoFilho
 let removeSegundoEUltimoFilho = document.getElementById('elementoOndeVoceEsta').lastElementChild;
-removeSegundoEUltimoFilho.remove();
 
+// selectiona terceiroFilho
 let removeTerceiroFilho =  document.getElementById('pai').lastElementChild.previousElementSibling;
-removeTerceiroFilho.remove();
 
+// selectiona quartoEUltimoFilho
 let removeQuartoEUltimoFilho = document.getElementById('pai').lastElementChild;
-removeQuartoEUltimoFilho.remove();
+
+// Funcao que aceita como parametro qual elemento a ser excluido
+removeElement(removeQuartoEUltimoFilho);
