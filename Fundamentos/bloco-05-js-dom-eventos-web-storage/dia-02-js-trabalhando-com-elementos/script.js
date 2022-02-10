@@ -17,3 +17,15 @@ textPrimeiroFilhoDoFilho.innerText = 'muda!';
 
 // 4
 console.log(document.getElementById('pai').firstElementChild);
+
+// 5
+console.log(document.getElementById('pai').previousElementSibling);
+
+// 6
+console.log(document.getElementById('elementoOndeVoceEsta').nextSibling);
+
+// 7
+console.log(document.getElementById('elementoOndeVoceEsta').nextElementSibling);
+
+// 8
+console.log(document.getElementById('pai').lastElementChild.previousElementSibling);
