@@ -1,7 +1,7 @@
 /* 
 console.log(document.getElementById('start').nextSibling) // nó
 console.log(document.getElementById('start').nextElementSibling) // <p>elemento</p>
-*/
+
 
 // 1
 console.log(document.getElementById('primeiroFilhoDoFilho').parentNode);
@@ -29,3 +29,9 @@ console.log(document.getElementById('elementoOndeVoceEsta').nextElementSibling);
 
 // 8
 console.log(document.getElementById('pai').lastElementChild.previousElementSibling);
+*/
+
+// Parte 2
+
+let sibling = document.createElement('section');
+document.getElementById('pai').appendChild(sibling);
