@@ -9,9 +9,13 @@
         margin: 0
       }
 
+      h1 {
+        text-align: center;
+      }
+
       section {
         border-color: black;
-        border-style: solid;
+        border: 1px solid;
       }
 
       .title {
@@ -19,11 +23,11 @@
       }
 
       .main-content {
-        background-color: yellow;
+        background-color: lightblue;
       }
 
       .main-content .center-content {
-        background-color: red;
+        background-color: gray;
         width: 50%;
         margin-left: auto;
         margin-right: auto;
@@ -77,6 +81,11 @@
       let section = document.createElement('section');
       section.className = 'center-content';
       document.getElementsByClassName('main-content')[0].appendChild(section);
+
+      // 4
+      let pTag = document.createElement('p');
+      pTag.innerText = 'Algum texto';
+      document.getElementsByClassName('center-content')[0].appendChild(pTag);
 
     </script>
   </body>
