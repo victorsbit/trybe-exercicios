@@ -97,6 +97,11 @@
       rightSection.className = 'right-content';
       document.getElementsByClassName('main-content')[0].appendChild(rightSection);
 
+      // 7
+      let img = document.createElement('img');
+      img.className = 'small-image';
+      img.src = 'https://picsum.photos/200'; // Ref: https://www.geeksforgeeks.org/html-dom-image-src-property/#:~:text=The%20HTML%20DOM%20Image%20src,Returns%20the%20image%20src%20property.
+      document.getElementsByClassName('left-content')[0].appendChild(img);
     </script>
   </body>
 </html>
