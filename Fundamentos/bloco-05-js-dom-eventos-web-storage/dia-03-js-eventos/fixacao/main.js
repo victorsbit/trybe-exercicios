@@ -18,12 +18,23 @@ secondLi.addEventListener('click', function(event) {
 
 // 2.1. Deve existir apenas um elemento com a classe 'tech'. Como você faz isso?
 
-let removeClassFromLi = document.querySelector('.tech'); // Ref: https://stackoverflow.com/questions/2155737/remove-css-class-from-element-with-javascript-no-jquery
+let removeClassFromLi = document.querySelectorAll('.tech'); // Ref: https://stackoverflow.com/questions/2155737/remove-css-class-from-element-with-javascript-no-jquery
 
+/* 
 removeClassFromLi.addEventListener('click', function() {
   removeClassFromLi.classList.remove('tech');
 });
+*/
 
+for(let i = 0; i < removeClassFromLi.length; i += 1) {
+  if (removeClassFromLi[i].classList = 'tech') {
+    let remove = removeClassFromLi[i];
+
+    remove.addEventListener('dblclick', function() {
+      removeClassFromLi[i].classList.remove('tech');
+    });
+  }
+}
 
 
 // 3. Crie uma função que, ao digitar na caixa de texto, altere o texto do elemento
