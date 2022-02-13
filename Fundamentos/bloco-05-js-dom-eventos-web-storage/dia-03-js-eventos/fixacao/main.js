@@ -10,7 +10,21 @@ const myWebpage = document.getElementById('my-spotrybefy');
 // 1.2. Note que uma das caixas está um pouco acima das outras. Por que isso ocorre?
 
 // 2. Crie uma função que adicione a classe 'tech' ao elemento `li` quando for clicado.
+
+secondLi.addEventListener('click', function(event) {
+  secondLi.className = 'tech';
+});
+
+
 // 2.1. Deve existir apenas um elemento com a classe 'tech'. Como você faz isso?
+
+let removeClassFromLi = document.querySelector('.tech'); // Ref: https://stackoverflow.com/questions/2155737/remove-css-class-from-element-with-javascript-no-jquery
+
+removeClassFromLi.addEventListener('click', function() {
+  removeClassFromLi.classList.remove('tech');
+});
+
+
 
 // 3. Crie uma função que, ao digitar na caixa de texto, altere o texto do elemento
 // com a classe 'tech';
