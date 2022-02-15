@@ -73,3 +73,15 @@ function changeBgColor() {
 }
 
 changeBgColor();
+
+// 4
+function createFridayButton(sexta) {
+  const button = document.createElement('button');
+  button.innerHTML = sexta;
+  const divButton = document.querySelector('.buttons-container');
+  button.setAttribute('id', 'btn-friday');
+  button.className = 'buttons-container';
+  divButton.appendChild(button);
+}
+
+createButton('Sexta-feira');
