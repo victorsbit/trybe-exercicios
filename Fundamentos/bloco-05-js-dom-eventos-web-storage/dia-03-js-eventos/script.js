@@ -107,3 +107,30 @@ function changeFriday() {
 }
 
 changeFriday();
+
+// 6
+function zoomIn() {
+  const allDays = document.querySelectorAll('.day');
+
+  for (let index = 0; index < allDays.length; index += 1) {
+    allDays[index].addEventListener('mousemove', function(event) {
+      let elementoSelecionado = event.target;
+      elementoSelecionado.style.fontSize = '30px';
+    });
+  }  
+}
+
+zoomIn();
+
+function zoomOut() {
+  const allDays = document.querySelectorAll('.day');
+
+  for (let index = 0; index < allDays.length; index += 1) {
+    allDays[index].addEventListener('mouseout', function(event) {
+      let elementoSelecionado = event.target;
+      elementoSelecionado.style.fontSize = '20px';
+    });
+  }
+}
+
+zoomOut();
