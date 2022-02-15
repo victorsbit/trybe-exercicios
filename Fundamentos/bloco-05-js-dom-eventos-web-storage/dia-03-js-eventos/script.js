@@ -38,12 +38,12 @@ for (let index = 0; index < dezDaysList.length; index += 1) {
 
 // 2
 function createButton(holidays) {
-  const button = document.createElement('button');
-  button.innerHTML = holidays;
+  const btnHoliday = document.createElement('button');
+  btnHoliday.innerHTML = holidays;
   const divButton = document.querySelector('.buttons-container');
-  button.setAttribute('id', 'btn-holiday') // Ref: https://www.educative.io/edpresso/how-to-add-an-id-to-element-in-javascript
-  button.className = 'buttons-container';
-  divButton.appendChild(button);
+  btnHoliday.setAttribute('id', 'btn-holiday') // Ref: https://www.educative.io/edpresso/how-to-add-an-id-to-element-in-javascript
+  btnHoliday.className = 'buttons-container';
+  divButton.appendChild(btnHoliday);
 }
 
 createButton('Feriados');
@@ -76,12 +76,34 @@ changeBgColor();
 
 // 4
 function createFridayButton(sexta) {
-  const button = document.createElement('button');
-  button.innerHTML = sexta;
+  const btnFriday = document.createElement('button');
+  btnFriday.innerHTML = sexta;
   const divButton = document.querySelector('.buttons-container');
-  button.setAttribute('id', 'btn-friday');
-  button.className = 'buttons-container';
-  divButton.appendChild(button);
+  btnFriday.className = 'buttons-container';
+  btnFriday.setAttribute('id', 'btn-friday');
+  divButton.appendChild(btnFriday);
 }
 
 createButton('Sexta-feira');
+
+// 5
+function changeFriday() {
+  const button = document.querySelectorAll('.buttons-container')[2];
+  const friday = document.querySelectorAll('.friday');
+  let defaultColor = 'rgb(238,238,238)';
+  let newColor = 'lightblue';
+
+  button.addEventListener('click', function() {
+    for (let i = 0; i < friday.length; i += 1) {
+      if (friday[i].style.backgroundColor === newColor) {
+        friday[i].style.backgroundColor = defaultColor;
+        friday[i].style.color = '#777'
+      } else {
+        friday[i].style.backgroundColor = newColor;
+        friday[i].style.color = 'white';
+      }      
+    }
+  });
+}
+
+changeFriday();
