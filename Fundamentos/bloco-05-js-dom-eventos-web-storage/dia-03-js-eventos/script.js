@@ -15,6 +15,8 @@ createDaysOfTheWeek();
 
 // Escreva seu código abaixo.
 
+
+// 1
 const dezDaysList = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31];
 
 for (let index = 0; index < dezDaysList.length; index += 1) {
@@ -33,3 +35,15 @@ for (let index = 0; index < dezDaysList.length; index += 1) {
   const dayUlList = document.querySelector('#days');
   dayUlList.appendChild(dayWeek);
 }
+
+// 2
+function createButton(holidays) {
+  const button = document.createElement('button');
+  button.innerHTML = holidays;
+  const divButton = document.querySelector('.buttons-container');
+  button.setAttribute('id', 'btn-holiday') // Ref: https://www.educative.io/edpresso/how-to-add-an-id-to-element-in-javascript
+  button.className = 'buttons-container';
+  divButton.appendChild(button);
+}
+
+createButton('Feriados');
