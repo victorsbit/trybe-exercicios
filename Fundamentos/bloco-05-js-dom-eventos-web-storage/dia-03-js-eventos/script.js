@@ -47,3 +47,29 @@ function createButton(holidays) {
 }
 
 createButton('Feriados');
+
+// 3
+function changeBgColor() {
+  const button = document.querySelector('#btn-holiday');
+  const allDays = document.querySelectorAll('.holiday');
+  let newColor = 'green';
+  let defaultColor = 'rgb(238,238,238)';
+
+
+  button.addEventListener('click', function() {  
+    for (let i = 0; i < allDays.length; i += 1) {
+      // allDays[i].style.backgroundColor = newColor;
+      // allDays[i].style.color = 'white';
+
+      if (allDays[i].style.backgroundColor === newColor) {
+        allDays[i].style.backgroundColor = defaultColor;
+        allDays[i].style.color = '#777'
+      } else {
+        allDays[i].style.backgroundColor = newColor;
+        allDays[i].style.color = 'white';
+      }
+    }
+  });
+}
+
+changeBgColor();
