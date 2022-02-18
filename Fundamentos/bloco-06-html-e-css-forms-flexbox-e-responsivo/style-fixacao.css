@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+}
+
+body {
+  background-color: #CCCCFF;
+}
+
+header {
+  width: 100%;
+  text-align: center;
+}
+
+header h1 {
+  color: gray;
+  margin: 20px;
+  font-family: 'Shizuru', cursive;
+  letter-spacing: 15px;
+}
+
+section {
+  width: 100%;
+}
+
+#form {
+  background-color: #FFFFFF;
+  width: 60%;
+  margin: 0 auto;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+#form input[type="text"], input[type="password"] {
+  padding: 2px;
+  margin-bottom: 2px;
+  width: 40%;
+}
+
+#check {
+  margin-top: 10px;
+}
+
+#botaum {
+  display: block;
+  margin-top: 10px;
+  padding: 5px;
+  width: 75px;
+}
+
+#remember {
+  width: 100%;
+  text-align: right;
+}
