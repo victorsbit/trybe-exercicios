@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
+  <title>Document</title>
+</head>
+
+<body>
+  <header><h1>TrybeTrip</h1></header>
+  <section>
+    <form action="" method="get" id="form">
+      <label for="full-name">Nome completo: 
+        <br><input type="text" id="full-name" minlength="10" maxlength="40" required>
+      </label>
+      <br>
+      <label for="email">E-mail:
+        <br><input type="email" id="email" minlength="10" maxlength="50" required>
+      </label>
+      <p id="destino">Destino preferido:</p>
+      <label for="option-1">
+        <input type="radio" id="option-1">Cidade
+      </label>
+      <label for="option-2">
+        <input type="radio" id="option-2">Campo
+      </label>
+      <label for="option-3">
+        <input type="radio" id="option-3">Praia
+      </label>
+      <label for="option-4">
+        <input type="radio" id="option-4">Montanhas
+      </label>
+      <label for="text-area">
+        <p>Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?
+        </p>
+        <textarea name="motivo" id="text-area" cols="30" rows="5" placeholder="insira aqui" maxlength="500"></textarea>
+      </label>
+      <br>
+      <label for="data">
+        Qual a melhor data para realizar sua viagem?<br>
+        <input type="date" id="data">
+      </label>
+      <br>
+      <label for="check-1">
+        <input type="checkbox" id="check-2"><p class="check">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?</p>
+      </label>
+      <br>
+      <label for="check-2">
+        <input type="checkbox" id="check-3"><p class="check">Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.</p>
+      </label>
+      <br>
+      <section class="wide">
+        <button type="submit" class="btn">Enviar</button>
+        <button type="reset" class="btn">Limpar</button>
+      </section>
+    </form>
+  </section>
+  <script src="script.js"></script>
+</body>
+
+</html>
