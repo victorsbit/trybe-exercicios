@@ -47,7 +47,7 @@ O programa conta com mais de 1.500 horas de aulas online, aborda introdução ao
 - [ ] 5-7: _Projeto - Adivinhe a Cor_
 - [ ] 5-7: _Projeto - Carta Misteriosa_
 
-##### Bloco 6: [HTML & CSS avançado](https://github.com/victorsbit/trybe-exercicios/tree/master/Fundamentos/bloco-06-html-e-css-forms-flexbox-e-responsivo)
+##### Bloco 6: [HTML e CSS: Forms, Flexbox e Responsivo](https://github.com/victorsbit/trybe-exercicios/tree/master/Fundamentos/bloco-06-html-e-css-forms-flexbox-e-responsivo)
 
 - [x] 6-1: _HTML & CSS - Forms_
 - [x] 6-2: _Bibliotecas JavaScript e Frameworks CSS_
