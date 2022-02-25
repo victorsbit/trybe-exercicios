@@ -41,11 +41,11 @@ O programa conta com mais de 1.500 horas de aulas online, aborda introdução ao
 - [x] 5-2: _JavaScript - Trabalhando com elementos_
 - [x] 5-3: _JavaScript - Eventos_
 - [x] 5-4: _JavaScript - Web Storage_
-- [] 5-5: _Projeto - Meme Generator_
+- [ ] 5-5: _Projeto - Meme Generator_
 - [x] 5-6: _Projeto - Arte com Pixels_
 - [x] 5-7: _Projeto - Lista de tarefas_
-- [] 5-7: _Projeto - Adivinhe a Cor_
-- [] 5-7: _Projeto - Carta Misteriosa_
+- [ ] 5-7: _Projeto - Adivinhe a Cor_
+- [ ] 5-7: _Projeto - Carta Misteriosa_
 
 ##### Bloco 6: [HTML & CSS avançado](https://github.com/victorsbit/trybe-exercicios/tree/master/Fundamentos/bloco-06-html-e-css-forms-flexbox-e-responsivo)
 
