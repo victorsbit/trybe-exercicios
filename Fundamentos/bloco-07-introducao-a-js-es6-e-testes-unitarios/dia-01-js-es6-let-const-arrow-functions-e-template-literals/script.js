@@ -51,3 +51,22 @@ const findBiggestWord = (phrase) => {
 }
 
 console.log(findBiggestWord('shingeki no kyojin'));
+
+// 4
+
+const initialStr = 'Tryber x aqui!';
+let putTogether = '';
+
+const shiftX = (str) => {
+  const splitStr = initialStr.split(' ');
+  
+  for (index = 0; index < splitStr.length; index += 1) {
+    if (splitStr[index] === 'x') {
+      splitStr[index] = str;
+    }
+    putTogether = splitStr.join(' ');
+  }
+  return putTogether;
+}
+
+console.log(shiftX('Victor'));
