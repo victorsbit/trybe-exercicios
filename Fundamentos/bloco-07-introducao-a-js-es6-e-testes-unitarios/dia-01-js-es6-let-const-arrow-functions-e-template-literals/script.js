@@ -22,4 +22,15 @@ const oddsAndEvens = [13, 3, 4, 10, 7, 2];
 
 /* Source: https://stackoverflow.com/questions/1063007/how-to-sort-an-array-of-integers-correctly */
 
-console.log(`Os números ${oddsAndEvens.sort((a, b) => a - b)} se encontram ordenados de forma crescente!`); // será necessário alterar essa linha 😉
+oddsAndEvens.sort((a, b) => a - b);
+
+console.log(`Os números ${oddsAndEvens} se encontram ordenados de forma crescente!`); // será necessário alterar essa linha 😉
+
+const fatorial = num => {
+  for (index = num - 1; index > 1; index -= 1) {
+    num *= index;
+  }
+  return num;
+}
+
+console.log(fatorial(4));
