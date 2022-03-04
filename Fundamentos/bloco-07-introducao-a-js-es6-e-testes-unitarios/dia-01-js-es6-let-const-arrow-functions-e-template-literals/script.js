@@ -26,6 +26,9 @@ oddsAndEvens.sort((a, b) => a - b);
 
 console.log(`Os números ${oddsAndEvens} se encontram ordenados de forma crescente!`); // será necessário alterar essa linha 😉
 
+// Parte II
+// 1
+
 const fatorial = num => {
   for (index = num - 1; index > 1; index -= 1) {
     num *= index;
@@ -34,3 +37,17 @@ const fatorial = num => {
 }
 
 console.log(fatorial(4));
+
+// 2
+
+const findBiggestWord = (phrase) => {
+  const phraseSplit = phrase.split(' ');
+
+  phraseSplit.sort((a, b) => {
+    return a.length - b.length;
+  });
+  const lastWord = phraseSplit.length - 1;
+  return phraseSplit[lastWord];
+}
+
+console.log(findBiggestWord('shingeki no kyojin'));
