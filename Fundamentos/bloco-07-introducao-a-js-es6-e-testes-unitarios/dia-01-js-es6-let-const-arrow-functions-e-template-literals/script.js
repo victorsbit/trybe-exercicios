@@ -54,6 +54,7 @@ console.log(findBiggestWord('shingeki no kyojin'));
 
 // 4
 
+const skillLit = ['HTMl', 'CSS', 'JS', 'Overwatch', 'Shingeki no Kyojin'];
 const initialStr = 'Tryber x aqui!';
 let putTogether = '';
 
@@ -69,4 +70,15 @@ const shiftX = (str) => {
   return putTogether;
 }
 
-console.log(shiftX('Victor'));
+const displayStr = () => {
+  const fullStr = `${shiftX('Victor')}! Minhas cinco principais habilidades são: 
+  ${skillLit[0]}
+  ${skillLit[1]}
+  ${skillLit[2]}
+  ${skillLit[3]}
+  ${skillLit[4]}`;
+
+  console.log(fullStr);
+}
+
+displayStr();
