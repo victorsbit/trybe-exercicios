@@ -34,6 +34,8 @@ const order = {
   },
 };
 
+// 1
+
 const customerInfo = (order) => {
   const deliveryPerson = Object.values(order.order.delivery)[0];
   const deliveryTo = Object.values(order)[0];
@@ -47,6 +49,8 @@ const customerInfo = (order) => {
 
 customerInfo(order);
 
+// 2
+
 const orderModifier = (order) => {
   const newCustomer = order.name = 'Luiz Silva';
   const pizza = Object.keys(order.order.pizza);
@@ -59,3 +63,33 @@ const orderModifier = (order) => {
 }
 
 orderModifier(order);
+
+// 3
+
+const lesson1 = {
+  materia: 'Matemática',
+  numeroEstudantes: 20,
+  professor: 'Maria Clara',
+  turno: 'manhã',
+};
+
+const lesson2 = {
+  materia: 'História',
+  numeroEstudantes: 20,
+  professor: 'Carlos',
+};
+
+const lesson3 = {
+  materia: 'Matemática',
+  numeroEstudantes: 10,
+  professor: 'Maria Clara',
+  turno: 'noite',
+};
+
+function assignTurn(obj, key, value) {
+  // Source: https://stackoverflow.com/questions/59992678/passing-object-key-name-in-function-parameter
+  Object.assign(obj, { [key]: value });
+  console.log(obj);
+}
+
+assignTurn(lesson2, 'turno', 'noite');
