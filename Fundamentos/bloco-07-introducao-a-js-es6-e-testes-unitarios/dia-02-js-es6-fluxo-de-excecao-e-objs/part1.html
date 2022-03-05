@@ -26,7 +26,7 @@
 
       if (value1 === '' || value2 === '') {
         throw new Error('Um ou mais campos estao vazios.');
-      } else if (typeof value1 !== 'number' || typeof value2 !== 'number') {
+      } else if (isNaN(result)) {
         throw new Error('Informe um valor numerico valido.');
       }
     }
