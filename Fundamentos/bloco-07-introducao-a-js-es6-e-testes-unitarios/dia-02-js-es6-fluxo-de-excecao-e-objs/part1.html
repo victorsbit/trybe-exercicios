@@ -25,7 +25,9 @@
       document.getElementById('result').innerHTML = `Resultado: ${result}`;
 
       if (value1 === '' || value2 === '') {
-        throw new Error('Um dos campos estao vazios.');
+        throw new Error('Um ou mais campos estao vazios.');
+      } else if (typeof value1 !== 'number' || typeof value2 !== 'number') {
+        throw new Error('Informe um valor numerico valido.');
       }
     }
 
@@ -34,6 +36,8 @@
         isValid();
       } catch (error) {
         document.getElementById('result').innerHTML = error.message;
+        document.getElementById('value1').value = '';
+        document.getElementById('value2').value = '';
       }
     }
 
