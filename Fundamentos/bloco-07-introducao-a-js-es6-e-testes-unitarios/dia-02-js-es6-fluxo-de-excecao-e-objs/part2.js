@@ -93,3 +93,10 @@ function assignTurn(obj, key, value) {
 }
 
 assignTurn(lesson2, 'turno', 'noite');
+
+function listKeys(obj) {
+  const allKeys = Object.keys(obj);
+  return console.log(allKeys);
+}
+
+listKeys(lesson2);
