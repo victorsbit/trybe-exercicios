@@ -44,7 +44,7 @@ const customerInfo = (order) => {
   const addressNumber = Object.values(order.address)[1];
   const addressAP = Object.values(order.address)[2];
 
-  return console.log(`Olá ${deliveryPerson}, entrega para: ${deliveryTo}, Telefone: ${phone}, R. ${address}, Nº, ${addressNumber}, AP: ${addressAP}`);
+  // return console.log(`Olá ${deliveryPerson}, entrega para: ${deliveryTo}, Telefone: ${phone}, R. ${address}, Nº, ${addressNumber}, AP: ${addressAP}`);
 }
 
 customerInfo(order);
@@ -57,46 +57,9 @@ const orderModifier = (order) => {
   const coke = Object.values(order.order.drinks.coke)[0];
   const newPrice = order.order.drinks.coke.price = 50;
 
-  const fullStr = console.log(`Ola ${newCustomer}, o total do seu pedido de ${pizza[0]}, ${pizza[1]} e ${coke} e R$ ${newPrice},00.`);
-  return fullStr;
+  // const fullStr = console.log(`Ola ${newCustomer}, o total do seu pedido de ${pizza[0]}, ${pizza[1]} e ${coke} e R$ ${newPrice},00.`);
+  // return fullStr;
   
 }
 
 orderModifier(order);
-
-// 3
-
-const lesson1 = {
-  materia: 'Matemática',
-  numeroEstudantes: 20,
-  professor: 'Maria Clara',
-  turno: 'manhã',
-};
-
-const lesson2 = {
-  materia: 'História',
-  numeroEstudantes: 20,
-  professor: 'Carlos',
-};
-
-const lesson3 = {
-  materia: 'Matemática',
-  numeroEstudantes: 10,
-  professor: 'Maria Clara',
-  turno: 'noite',
-};
-
-function assignTurn(obj, key, value) {
-  // Source: https://stackoverflow.com/questions/59992678/passing-object-key-name-in-function-parameter
-  Object.assign(obj, { [key]: value });
-  console.log(obj);
-}
-
-assignTurn(lesson2, 'turno', 'noite');
-
-function listKeys(obj) {
-  const allKeys = Object.keys(obj);
-  return console.log(allKeys);
-}
-
-listKeys(lesson2);
