@@ -23,7 +23,6 @@ console.log(newEmployees(createEmployee));
 
 const lottery = (number, callback) => {
   const random = Math.round(Math.random() * 5);
-  console.log(random);
   return callback(number, random);
 }
 
@@ -35,3 +34,27 @@ const checkNumber = (bet, randomNumber) => {
 }
 
 console.log(lottery(2, checkNumber));
+
+// 3
+
+const RIGHT_ANSWERS = ['A', 'C', 'B', 'D', 'A', 'A', 'D', 'A', 'D', 'C'];
+const STUDENT_ANSWERS = ['A', 'N.A', 'B', 'D', 'A', 'C', 'N.A', 'A', 'D', 'B'];
+
+const validator = (a, b, callback) => {
+  return callback(a, b);
+}
+
+const checkAnswers = (a, b) => {
+  let points = 0;
+
+  for (let index = 0; index < a.length; index += 1) {
+    if (a[index] === b[index]) {
+      points += 1;
+    } else {
+      points -= 0.5;
+    }    
+  }
+  return points;
+}
+
+console.log(validator(RIGHT_ANSWERS, STUDENT_ANSWERS, checkAnswers));
