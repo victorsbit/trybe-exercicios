@@ -52,7 +52,7 @@ const checkAnswers = (a, b) => {
       points += 1;
     } else {
       points -= 0.5;
-    }    
+    }
   }
   return points;
 }
