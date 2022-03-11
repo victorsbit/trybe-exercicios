@@ -97,7 +97,7 @@ function getNamedBook() {
   return book;
 }
 
-console.log(getNamedBook());
+// console.log(getNamedBook());
 
 // 4
 function booksOrderedByReleaseYearDesc() {
@@ -108,4 +108,17 @@ function booksOrderedByReleaseYearDesc() {
   return sortedArray;
 }
 
-console.log(booksOrderedByReleaseYearDesc());
+// console.log(booksOrderedByReleaseYearDesc());
+
+// 5
+const expectedResult = false;
+
+function everyoneWasBornOnSecXX() {
+  const result = books.every(element => element.author.birthYear >= 1901 && element.author.birthYear <= 2000);
+
+  if (result) return result;
+
+  return expectedResult;
+}
+
+console.log(everyoneWasBornOnSecXX());
