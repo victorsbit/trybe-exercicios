@@ -93,8 +93,19 @@ console.log(smallerName());
 // 3
 function getNamedBook() {
   const book = books.find(element => element.name.length == 26);
-  
+
   return book;
 }
 
 console.log(getNamedBook());
+
+// 4
+function booksOrderedByReleaseYearDesc() {
+  const sortedArray = books.sort((a, b) => {
+    return b.releaseYear - a.releaseYear;
+  });
+  
+  return sortedArray;
+}
+
+console.log(booksOrderedByReleaseYearDesc());
