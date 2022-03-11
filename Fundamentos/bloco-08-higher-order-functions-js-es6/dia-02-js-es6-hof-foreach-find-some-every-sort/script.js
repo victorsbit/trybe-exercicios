@@ -62,6 +62,7 @@ const books = [
 ];
 
 // Adicione o código do exercício aqui:
+// 1
 function authorBornIn1947(arr) {
   let authorName = ''
   arr.find(element => {
@@ -73,3 +74,18 @@ function authorBornIn1947(arr) {
 }
 
 console.log(authorBornIn1947(books));
+
+// 2
+function smallerName() {
+  let nameBook;
+  
+  const sortedArray = books.sort((a, b) => {
+    return a.name.length - b.name.length;
+  });
+
+  const lastElementFromArray = sortedArray.length - 1;
+  nameBook = sortedArray[lastElementFromArray].name;
+  return nameBook;
+}
+
+console.log(smallerName());
