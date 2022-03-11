@@ -93,7 +93,7 @@ console.log(smallerName());
 // 3
 function getNamedBook() {
   const book = books.find(element => element.name.length == 26);
-
+  
   return book;
 }
 
@@ -122,3 +122,12 @@ function everyoneWasBornOnSecXX() {
 }
 
 console.log(everyoneWasBornOnSecXX());
+
+// 6
+function someBookWasReleaseOnThe80s() {
+  const result = books.some(element => element.releaseYear >= 1980 && element.releaseYear <= 1990);
+
+  return result;
+}
+
+console.log(someBookWasReleaseOnThe80s());
