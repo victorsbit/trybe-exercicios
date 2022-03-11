@@ -80,7 +80,7 @@ function smallerName() {
   let nameBook;
   
   const sortedArray = books.sort((a, b) => {
-    return a.name.length - b.name.length;
+    return b.name.length - a.name.length;
   });
 
   const lastElementFromArray = sortedArray.length - 1;
