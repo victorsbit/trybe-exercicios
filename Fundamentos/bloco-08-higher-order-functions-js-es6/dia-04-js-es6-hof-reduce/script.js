@@ -87,8 +87,6 @@ function reduceNames() {
 // console.log(reduceNames());
 
 // 3
-const expectedResult = 43;
-
 function averageAge() {
   const allAges = books.length;
   const authorAge = books.map(element => element.releaseYear - element.author.birthYear);
@@ -98,4 +96,13 @@ function averageAge() {
   return average;
 }
 
-console.log(averageAge());
+// console.log(averageAge());
+
+// 4
+function longestNamedBook() {
+  return books.reduce((acc, curr) => {
+    if (acc.name.length > curr.name.length) return acc;
+  });
+}
+
+console.log(longestNamedBook());
