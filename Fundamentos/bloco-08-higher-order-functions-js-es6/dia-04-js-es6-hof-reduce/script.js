@@ -84,4 +84,18 @@ function reduceNames() {
   }, '');
 }
 
-console.log(reduceNames());
+// console.log(reduceNames());
+
+// 3
+const expectedResult = 43;
+
+function averageAge() {
+  const allAges = books.length;
+  const authorAge = books.map(element => element.releaseYear - element.author.birthYear);
+
+  const average = authorAge.reduce((acc, curr) => acc + curr) / allAges;
+
+  return average;
+}
+
+console.log(averageAge());
