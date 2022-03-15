@@ -31,11 +31,12 @@ function filterPeople(array) {
   // return array.filter((element) => element.bornIn >= 1901 && element.bornIn <= 2000);
   
   let newArray = [];
-  array.forEach((element) => {
-    const { bornIn } = element;
-    if (bornIn >= 1901 && bornIn <= 2000) newArray.push(element);
-  });
   
+  array.forEach((element) => {
+    const { bornIn, nationality } = element;
+    if (bornIn >= 1901 && bornIn <= 2000 && nationality === 'Australian') newArray.push(element);
+  });
+
   return newArray;
 }
 
