@@ -8,13 +8,12 @@ const yearSeasons = {
 function months(array) {
   const { spring, summer, autumn, winter } = {...array};
   const newArray = [spring, summer, autumn, winter];
+  
   let months = [];
 
-  newArray.forEach((element) => {
-    months.push(...element);
-  });
+  newArray.forEach((element) => months.push(...element));
 
   return months;
 }
 
-console.log(months(yearSeasons));
+// console.log(months(yearSeasons));
