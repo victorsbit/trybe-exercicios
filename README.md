@@ -6,7 +6,7 @@ _"A Trybe é uma escola do futuro para qualquer pessoa que queira melhorar de vi
 
 O programa conta com mais de 1.500 horas de aulas online, aborda introdução ao desenvolvimento de software, front-end, back-end, ciência da computação, engenharia de software, metodologias Ágeis e habilidades comportamentais.
 
-## Fundamentos do Desenvolvimento Web :hourglass_flowing_sand:
+## Fundamentos do Desenvolvimento Web :heavy_check_mark:
 
 ##### Bloco 1: [Introdução - Unix & Shell](https://github.com/victorsbit/trybe-exercicios/tree/master/fundamentos/bloco-01-unix-e-shell)
 
@@ -73,21 +73,24 @@ O programa conta com mais de 1.500 horas de aulas online, aborda introdução ao
 - [x] 8-5: _JavaScript ES6 - spread operator, rest parameter, destructuring e mais_
 - [x] 8-6: _Projeto - Zoo functions()_
 
-##### Bloco 9: [Assincronicidade & Callbacks]()
+##### Bloco 9: [JS e Testes Assíncronos]()
 
-- [ ] 9-1: _JavaScript Assíncrono e Callbacks_
-- [ ] 9-2: _JavaScript Assíncrono - Fetch API e async-wait_
-- [ ] 9-3: _Jest - Testes Assíncrono_
-- [ ] 9-4: _Projeto - Carrinho de Compras_
-<!--
-##### Bloco 10: Jest
-
-- [ ] 10-1: _Primeiros passos no Jest_
-- [ ] 10-2: _Jest - Testes Assíncronos_
-- [ ] 10-3: _Jest - Simulando comportamentos_
-- [ ] 10-4: _[Projeto - Jest Assíncrono e Mocking]()_
+- [x] 9-1: _JavaScript Assíncrono e Callbacks_
+- [x] 9-2: _JavaScript Assíncrono - Fetch API e async-wait_
+- [x] 9-3: _Jest - Testes Assíncrono_
+- [x] 9-4: _Projeto - Carrinho de Compras_
 
 ## Desenvolvimento Front-end :hourglass_flowing_sand:
+
+##### Bloco 10: Introdução à React
+
+- [ ] 10-1: _Introdução - Front-end_
+- [ ] 10-1: _Introdução - React_
+- [ ] 10-1: _'Hello, world' no React!_
+- [ ] 10-2: _Componentes React_
+- [ ] 10-3: _Projeto - Sistema Solar_
+
+<!--
 
 ##### Bloco 11: Introdução - React
 
