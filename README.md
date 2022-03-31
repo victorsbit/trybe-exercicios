@@ -77,7 +77,7 @@ O programa conta com mais de 1.500 horas de aulas online, aborda introdução ao
 
 - [x] 9-1: _JavaScript Assíncrono e Callbacks_
 - [x] 9-2: _JavaScript Assíncrono - Fetch API e async-wait_
-- [x] 9-3: _Jest - Testes Assíncrono_
+- [x] 9-3: _Jest - Testes Assíncronos_
 - [x] 9-4: _Projeto - Carrinho de Compras_
 
 ## Desenvolvimento Front-end :hourglass_flowing_sand:
