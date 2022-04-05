@@ -1,0 +1,15 @@
+.rodape {
+  background-color: gray;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.container p {
+  border: 1px black solid;
+  box-shadow: 5px 5px 15px gray;
+  background-color: lightblue;
+}
