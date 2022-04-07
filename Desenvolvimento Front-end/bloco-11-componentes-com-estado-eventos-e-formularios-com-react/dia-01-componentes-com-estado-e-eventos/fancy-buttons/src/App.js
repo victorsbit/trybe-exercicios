@@ -6,32 +6,47 @@ class App extends Component {
   constructor() {
     super();
 
+    this.state = {
+      firstBtn: 0,
+      secondBtn: 0,
+      thirdBtn: 0,
+    }
+
     this.logIt = this.logIt.bind(this);
     this.logItt = this.logItt.bind(this);
     this.logIttt = this.logIttt.bind(this);
   }
 
   logIt() {
-    console.log('clicou!');
-    console.log(this);
+    this.setState((previous, _props) => {
+      return {
+        firstBtn: previous.firstBtn + 1,
+      }
+    })
   }
   
   logItt() {
-    console.log('clicou!!');
-    console.log(this);
+    this.setState((previous, _props) => {
+      return {
+        secondBtn: previous.secondBtn + 1,
+      }
+    })
   }
   
   logIttt() {
-    console.log('clicou!!!');
-    console.log(this);
+    this.setState((previous, _props) => {
+      return {
+        thirdBtn: previous.thirdBtn + 1,
+      }
+    })
   }
 
   render() {
     return (
       <main>
-        <button onClick={this.logIt}>Click!</button>
-        <button onClick={this.logItt}>Click!!</button>
-        <button onClick={this.logIttt}>Click!!!</button>
+        <button onClick={this.logIt}>{this.state.firstBtn}</button>
+        <button onClick={this.logItt}>{this.state.secondBtn}</button>
+        <button onClick={this.logIttt}>{this.state.thirdBtn}</button>
       </main>
     )
   }
