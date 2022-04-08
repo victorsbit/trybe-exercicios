@@ -17,10 +17,19 @@ class App extends Component {
     this.logIttt = this.logIttt.bind(this);
   }
 
-  logIt() {
+  logIt(event) {
     this.setState((previous, _props) => {
+      const obj = { key: previous.firstBtn + 1}
+      const element = event.target;
+
+      if (obj.key % 2 === 0) {
+        element.className = 'green-btn';
+      } else {
+        element.className = '';
+      }
+
       return {
-        firstBtn: previous.firstBtn + 1,
+        firstBtn: obj.key,
       }
     })
   }
