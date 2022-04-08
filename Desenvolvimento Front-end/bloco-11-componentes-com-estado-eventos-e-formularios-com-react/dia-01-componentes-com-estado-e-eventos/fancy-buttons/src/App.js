@@ -24,8 +24,10 @@ class App extends Component {
 
       if (obj.key % 2 === 0) {
         element.className = 'green-btn';
+        console.log('Green');
       } else {
         element.className = '';
+        console.log('Default');
       }
 
       return {
