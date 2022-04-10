@@ -13,7 +13,7 @@ class App extends Component {
     }
 
     this.logIt = this.logIt.bind(this);
-    this.logItt = this.logItt.bind(this);
+    // this.logItt = this.logItt.bind(this);
     this.logIttt = this.logIttt.bind(this);
   }
 
@@ -36,7 +36,7 @@ class App extends Component {
     })
   }
   
-  logItt() {
+  logItt = () => {
     this.setState((previous, _props) => {
       return {
         secondBtn: previous.secondBtn + 1,
