@@ -5,13 +5,18 @@ class Form extends Component {
   constructor() {
     super();
 
-    this.state = {value: 'hello'};
+    this.state = {
+      textao: 'hello',
+      selecao: '',
+    };
 
-    this.handleTextAreaChange = this.handleTextAreaChange.bind(this);
+    this.handleChange = this.handleChange.bind(this);
   }
 
-  handleTextAreaChange(event) {
-    this.setState({ value: event.target.value });
+  handleChange({ target }) {
+    const { name, value } = target;
+
+    this.setState({ [name]: value });
   }
 
   render() {
@@ -20,16 +25,17 @@ class Form extends Component {
         <form>
           <label htmlFor='selecao'>Selecione a sua seleciocidade</label>
           <br />
-          <select name='selecao' id='selecao'>
-            <option value="1">selecao 1</option>
-            <option value="2">selecao 2</option>
+          <select name='selecao' id='selecao' onChange={this.handleChange}>
+            <option value='default' selected hidden disabled></option>
+            <option value="selecao 1">selecao 1</option>
+            <option value="selecao 2">selecao 2</option>
           </select>
           <br />
           <label htmlFor='textao'>Digite aqui</label>
           <br />
-          <textarea id='textao' value={this.state.value} onChange={this.handleTextAreaChange}></textarea>
+          <textarea id='textao' name='textao' value={this.state.textao} onChange={this.handleChange}></textarea>
         </form>
-      </div>
+      </div >
     )
   }
 }
