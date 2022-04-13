@@ -73,7 +73,7 @@ O programa conta com mais de 1.500 horas de aulas online, aborda introdução ao
 - [x] 8-5: _JavaScript ES6 - spread operator, rest parameter, destructuring e mais_
 - [x] 8-6: _Projeto - Zoo functions()_
 
-##### Bloco 9: [JS e Testes Assíncronos]()
+##### Bloco 9: [JS e Testes Assíncronos](https://github.com/victorsbit/trybe-exercicios/tree/master/Fundamentos/bloco-09-js-e-testes-assincronos)
 
 - [x] 9-1: _JavaScript Assíncrono e Callbacks_
 - [x] 9-2: _JavaScript Assíncrono - Fetch API e async-wait_
@@ -82,7 +82,7 @@ O programa conta com mais de 1.500 horas de aulas online, aborda introdução ao
 
 ## Desenvolvimento Front-end :hourglass_flowing_sand:
 
-##### Bloco 10: Introdução à React
+##### Bloco 10: [Introdução à React](https://github.com/victorsbit/trybe-exercicios/tree/master/Desenvolvimento%20Front-end/bloco-10-introducao-a-react)
 
 - [x] 10-1: _Introdução - Front-end_
 - [x] 10-1: _Introdução - React_
@@ -90,19 +90,19 @@ O programa conta com mais de 1.500 horas de aulas online, aborda introdução ao
 - [x] 10-2: _Componentes React_
 - [ ] 10-3: _Projeto - Sistema Solar_
 
+##### Bloco 11: [Componentes com Estado, Eventos e Formulários com React](https://github.com/victorsbit/trybe-exercicios/tree/master/Desenvolvimento%20Front-end/bloco-11-componentes-com-estado-eventos-e-formularios-com-react)
+
+- [x] 11-1: _Componentes com estado e eventos_
+- [x] 11-2: _Formulários no React_
+- [x] 11-3: _Projeto - Tryunfo_
+
+##### Bloco 12: Ciclo de vida de Componentes e React Router
+
+- [ ] 12-1: _Ciclo de vida de componentes_
+- [ ] 12-2: _React Router_
+- [ ] 12-3: _Projeto - TrybeTunes_
+
 <!--
-
-##### Bloco 11: Introdução - React
-
-- [ ] 11-1: _'Hello, world!' no React!_
-- [ ] 11-2: _Componentes React_
-- [ ] 11-3: _[Projeto - Movie Cards Library]()_
-
-##### Bloco 12: React
-
-- [ ] 12-1: _Components com estado_
-- [ ] 12-2: _Eventos e formulários no React_
-- [ ] 12-3: _[Projeto - Movie Cards Library Stateful]()_
 
 ##### Bloco 13: React
 
