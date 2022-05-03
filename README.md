@@ -96,20 +96,18 @@ O programa conta com mais de 1.500 horas de aulas online, aborda introdução ao
 - [x] 11-2: _Formulários no React_
 - [x] 11-3: _Projeto - Tryunfo_
 
-##### Bloco 12: Ciclo de vida de Componentes e React Router
+##### Bloco 12: [Ciclo de vida de Componentes e React Router](https://github.com/victorsbit/trybe-exercicios/tree/master/Desenvolvimento%20Front-end/bloco-12-ciclo-de-vida-de-componentes-e-react-router/dia-01-ciclo-de-vida-de-componentes)
 
-- [ ] 12-1: _Ciclo de vida de componentes_
-- [ ] 12-2: _React Router_
-- [ ] 12-3: _Projeto - TrybeTunes_
+- [x] 12-1: _Ciclo de vida de componentes_
+- [x] 12-2: _React Router_
+- [x] 12-3: _Projeto - TrybeTunes_
+
+##### Bloco 13: Metodologias Ágeis
+
+- [x] 13-1: _Metodologias Ágeis_
+- [x] 13-2: _Projeto - Frontend Online Store_
 
 <!--
-
-##### Bloco 13: React
-
-- [ ] 13-1: _Melhorando o reuso de componentes: props.children e PropTypes_
-- [ ] 13-2: _Ciclo de vida de componentes em React_
-- [ ] 13-3: _React Router_
-- [ ] 13-4: _[Projeto - Movie Cards Library CRUD]()_
 
 ##### Bloco 14: Metodologias Ágeis
 
