@@ -4,18 +4,6 @@ function randomNumber() {
   return Math.floor(Math.random() * 100);
 }
 
-// function toUpperCase(str) {
-//   return str.toUpperCase();
-// }
-
-// function firstLetter(str) {
-//   return str[0];
-// }
-
-// function strConcat(a, b) {
-//   return `${a} ${b}`;
-// }
-
 describe('Exercises', () => {
   it('1', () => {
     const expected = 'number';
@@ -57,7 +45,7 @@ describe('Exercises', () => {
     expect(randomNumber).toHaveBeenCalled();
     expect(randomNumber).toHaveBeenCalledTimes(1);
     expect(randomNumber(5)).toBe(10);
-  })
+  });
 
   it('4', () => {
     jest.spyOn(service, 'toUpperCase').mockImplementation((str) => str.toLowerCase());
@@ -83,5 +71,14 @@ describe('Exercises', () => {
     // expect(service.strConcat).toHaveBeenCalled(); // Como a implementação original da função foi restaurada (linha 82), não é mais possível executar esse matcher
     // expect(service.strConcat).toHaveBeenCalledTimes(1); // Como a implementação original da função foi restaurada (linha 82), não é mais possível executar esse matcher
     expect(service.strConcat('a', 'b')).toBe('ab');
+  });
+
+  it('5', () => {
+    const message = 'https://i.insider.com/602ee9d81a89f20019a377c6?width=1136&format=jpeg';
+
+    // jest.spyOn(global, 'fetch');
+    // global.fetch.mockResolvedValue({
+    //   json: jest.fn().mockResolvedValue(message),
+    // });
   })
 });
