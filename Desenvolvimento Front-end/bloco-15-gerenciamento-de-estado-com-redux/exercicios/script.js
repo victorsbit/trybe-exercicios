@@ -5,11 +5,38 @@ const ESTADO_INICIAL = {
   index: 0,
 };
 
-const reducer = (state = 'teste', action) => {
-  switch (state) {
+const NEXT = 'NEXT_COLOR';
+const PREV = 'PREVIOUS_COLOR';
+
+function nextColor() {
+  return {
+    type: NEXT,
+  };
+}
+
+function prevColor() {
+  return {
+    type: PREV,
+  };
+}
+
+const reducer = (state = ESTADO_INICIAL, action) => {
+  switch (action.type) {
+    case NEXT:
+      return {
+        ...state,
+        index: index += 1,
+      };
+    case PREV:
+      return {
+        ...state,
+        index: index -= 1,
+      }
     default:
-      state,
+      return state;
   }
 }
 
 const store = Redux.createStore(reducer);
+
+console.log(store.getState());
