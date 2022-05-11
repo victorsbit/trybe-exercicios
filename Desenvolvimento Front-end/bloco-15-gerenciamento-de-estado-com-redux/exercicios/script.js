@@ -5,4 +5,11 @@ const ESTADO_INICIAL = {
   index: 0,
 };
 
-const store = Redux.createStore();
+const reducer = (state = 'teste', action) => {
+  switch (state) {
+    default:
+      state,
+  }
+}
+
+const store = Redux.createStore(reducer);
