@@ -45,12 +45,12 @@
         case 'NEXT-COLOR':
           return {
             ...state,
-            index: state.index += 1,
+            index: state.index < 5 ? state.index += 1 : state.index,
           };
         case 'PREVIOUS-COLOR':
           return {
             ...state,
-            index: state.index -= 1,
+            index: state.index > 0 ? state.index -= 1 : state.index,
           };
         default:
           return state;
@@ -67,6 +67,7 @@
     store.subscribe(() => {
       const { colors, index } = store.getState();
       console.log(index);
+
       colorSpan.innerHTML = colors[index];
       container.style.backgroundColor = colors[index];
     })
