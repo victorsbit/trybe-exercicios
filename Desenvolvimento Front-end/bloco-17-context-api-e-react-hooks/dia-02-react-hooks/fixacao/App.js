@@ -1,13 +1,10 @@
 import './App.css';
-import { useState } from 'react';
+import { useContext } from 'react';
 import ToDoList from './components/ToDoInput';
+import MyContext from './context/MyContext';
 
 function App() {
-  const [state, setState] = useState([]);
-
-  const handleButton = (newTodo) => {
-    setState(state.concat(newTodo));
-  }
+  const state = useContext(MyContext);
 
   return (
     <main>
@@ -15,11 +12,11 @@ function App() {
         <h2>To do list</h2>
       </header>
       <section>
-        <ToDoList handleButton={handleButton} />
+        <ToDoList />
       </section>
       <section>
         <ul>
-          {state.map((todo, index) => <li key={index}>{todo}</li>)}
+          {state.ToDoList.map((todo, index) => <li key={index}>{todo}</li>)}
         </ul>
       </section>
     </main>

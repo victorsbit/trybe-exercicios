@@ -1,7 +1,9 @@
-import { useState } from 'react';
+import { useContext, useState } from 'react';
+import MyContext from '../context/MyContext';
 
-function ToDoList({ handleButton }) {
+function ToDoList() {
   const [input, setState] = useState('');
+  const { updateList } = useContext(MyContext);
 
   const handleChange = ({ target }) => {
     setState(target.value);
@@ -19,7 +21,7 @@ function ToDoList({ handleButton }) {
       </label>
       <button
         type='button'
-        onClick={ () => handleButton(input) }
+        onClick={ () => updateList(input) }
       >
         Add Task
       </button>
