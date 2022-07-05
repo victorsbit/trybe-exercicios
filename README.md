@@ -80,7 +80,7 @@ O programa conta com mais de 1.500 horas de aulas online, aborda introdução ao
 - [x] 9-3: _Jest - Testes Assíncronos_
 - [x] 9-4: _Projeto - Carrinho de Compras_
 
-## Desenvolvimento Front-end :hourglass_flowing_sand:
+## Desenvolvimento Front-end :heavy_check_mark:
 
 ##### Bloco 10: [Introdução à React](https://github.com/victorsbit/trybe-exercicios/tree/master/Desenvolvimento%20Front-end/bloco-10-introducao-a-react)
 
@@ -109,44 +109,46 @@ O programa conta com mais de 1.500 horas de aulas online, aborda introdução ao
 
 ##### Bloco 14: [Testes automatizados com React Testing Library](#)
 
-- [ ] 14-1: _RTL - Primeiros passos_
-- [ ] 14-2: _RTL - Mocks e Inputs_
-- [ ] 14-3: _RTL - Testando React Router_
-- [ ] 14-4: _Projeto - Testes em React_
+- [x] 14-1: _RTL - Primeiros passos_
+- [x] 14-2: _RTL - Mocks e Inputs_
+- [x] 14-3: _RTL - Testando React Router_
+- [x] 14-4: _Projeto - Testes em React_
 
-<!--
+##### Bloco 15: [Gerenciamento de estado com Redux](#)
 
-##### Bloco 15: Testes em React
+- [x] 15-1: _Introdução ao Redux - O estado global da aplicação_
+- [x] 15-2: _Usando o Redux no React_
+- [x] 15-3: _Usando o Redux no React - Prática_
+- [x] 15-4: _Usando o Redux no React - Actions Assíncronas_
+- [x] 15-5: _Testes em React-Redux_
+- [x] 15-6: _Projeto - Trybe Wallet_
 
-- [ ] 15-1: _Testando React com a React Testing Library_
-- [ ] 15-2: _Testando React com a React Testing Library - Parte 2_
-- [ ] 15-3: _[Projeto - Testes em React]()_
+##### Bloco 16: [Projeto Jogo de Trivia](#)
 
-##### Bloco 16: Introdução ao Redux
+- [x] 16-1: _Projeto - Jogo de Trivia_
 
-- [ ] 16-1: _Introdução ao Redux_
-- [ ] 16-2: _React com Redux - Parte 1_
-- [ ] 16-3: _React com Redux - PrÃ¡tica_
-- [ ] 16-4: _React com Redux - Parte 2_
-- [ ] 16-5: _Testes síncronos com React-Redux_
-- [ ] 16-6: _[Projeto - Tabela com filtros de dados]()_
+##### Bloco 17: [Context API e React Hooks](#)
 
-##### Bloco 17: Projeto React
+- [x] 17-1: _Context API do React_
+- [x] 17-2: _React Hooks - useState e useContext_
+- [x] 17-3: _React Hooks - useEffect e Hooks customizados_
+- [x] 17-4: _Projeto - StarWars Datatable com Context API e Hooks_
 
-- [ ] 17-1: _[Projeto - Jogo de Trivia]()_
+##### Bloco 18: [Projeto Final de Front-end](#)
 
-##### Bloco 18: React & Context API
-
-- [ ] 18-1: _Context API do React_
-- [ ] 18-2: _React Hooks - useState e useContext_
-- [ ] 18-3: _React Hooks - useEffect e Hooks customizados_
-- [ ] 18-4: _[Projeto - StarWars Datatable com Context API e Hooks]()_
-
-##### Bloco 19: Projeto Final de Front-end
-
-- [ ] 19-1: _[Projeto - App de Receitas]()_
+- [x] 18-1: _Projeto - App de Receitas_
 
 ## Desenvolvimento Back-end :hourglass_flowing_sand:
+
+##### Bloco 19: [Docker: Utilizando Containers](#)
+
+- [ ] 19-1: Introdução - Back-end
+- [ ] 19-1: Utilizando Containers - Docker
+- [ ] 19-2: Manipulando Imagens no Docker
+- [ ] 19-3: Orquestrando Containers com Docker Compose
+- [ ] 19-4: Projeto - Docker Todo-List
+
+<!--
 
 ##### Bloco 20: Introdução - Bancos de dados relacionais
 
