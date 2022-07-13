@@ -26,5 +26,4 @@ SELECT * FROM Projects ORDER BY hours LIMIT 1 OFFSET 1;
 
 SELECT * FROM Projects ORDER BY hours LIMIT 5;
 
--- não consegui converter
-SELECT CONCAT('Existem ', COUNT(name), ' cientistas na tabela Scientists.') AS number_of_scientists FROM Scientists;
+SELECT CONCAT('Existem ', CAST(COUNT(name) AS CHAR), ' cientistas na tabela Scientists.') AS number_of_scientists FROM Scientists;
