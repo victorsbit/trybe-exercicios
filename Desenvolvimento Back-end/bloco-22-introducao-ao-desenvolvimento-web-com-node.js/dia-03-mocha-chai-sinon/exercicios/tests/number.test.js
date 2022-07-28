@@ -28,4 +28,13 @@ describe('testa a funcao', () => {
       expect(result).to.be.equals(expected);
     });
   });
+
+  describe('se o parametro passado nao for um numero', () => {
+    it('deve retornar a string "o valor deve ser um número"', () => {
+      const result = checkNumber('str');
+      const expected = 'o valor deve ser um número';
+
+      expect(result).to.be.equals(expected);
+    });
+  });
 });
