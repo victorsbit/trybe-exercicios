@@ -1,5 +1,7 @@
 const { expect } = require("chai");
-const checkNumber = require("..");
+const { checkNumber, writeFile } = require("..");
+const sinon = require('sinon');
+const fs = require('fs');
 
 describe('testa a funcao', () => {
   describe('se o numero for menor que 0', () => {
@@ -35,6 +37,22 @@ describe('testa a funcao', () => {
       const expected = 'o valor deve ser um número';
 
       expect(result).to.be.equals(expected);
+    });
+  });
+
+  describe('se o conteudo passado e escrito no arquivo', () => {
+    before(() => {
+      sinon.stub(fs, 'writeFileSync');
+    });
+  
+    after(() => {
+      fs.writeFileSync.restore();
+    });
+
+    it('deve retornar "ok"', () => {
+      const result = writeFile('arquivo.txt', 'horny');
+
+      expect(result).to.be.equals('ok');
     });
   });
 });
