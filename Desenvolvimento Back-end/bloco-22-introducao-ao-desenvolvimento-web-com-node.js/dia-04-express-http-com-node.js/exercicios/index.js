@@ -27,4 +27,11 @@ app.post('/greetings', function (req, res) {
   res.status(401).json({ message: "Unauthorized" });
 });
 
+// 4
+app.put('/users/:name/:age', function (req, res) {
+  const { name, age } = req.params;
+
+  res.status(200).json({ message: `Seu nome é ${name} e você tem ${age} anos de idade` });
+});
+
 app.listen(PORT, () => console.log(`Ouvindo na porta ${PORT}`));
