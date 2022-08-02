@@ -18,4 +18,13 @@ app.post('/hello', function (req, res) {
   res.status(201).json({ message: `Hello, ${name}` });
 });
 
+// 3
+app.post('/greetings', function (req, res) {
+  const { name, age } = req.body;
+
+  if (age > 17) return res.status(200).json({ message: `Hello, ${name}!` });
+
+  res.status(401).json({ message: "Unauthorized" });
+});
+
 app.listen(PORT, () => console.log(`Ouvindo na porta ${PORT}`));
