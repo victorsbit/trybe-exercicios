@@ -22,8 +22,22 @@ const getBookByID = async (id) => {
   return book;
 }
 
+const isValid = (title, authorID) => {
+  if (!title || typeof title !== 'string' || title.length < 3) return false;
+  if (!authorID || !(authorID >= 1 && authorID <= 5)) return false;
+
+  return true;
+}
+
+const create = async (title, authorID) => connection.execute(
+	'INSERT INTO model_example.books (title, author_id) VALUES (?,?)',
+	[title, authorID],
+);
+
 module.exports = {
   getAll,
   getByAuthorId,
   getBookByID,
+  isValid,
+  create,
 };
