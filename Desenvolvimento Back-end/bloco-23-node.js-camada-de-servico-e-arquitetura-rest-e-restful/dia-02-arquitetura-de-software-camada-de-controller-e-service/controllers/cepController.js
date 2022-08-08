@@ -1,6 +1,3 @@
-const express = require('express');
-const app = express();
+const testResponse = (_req, res) => res.status(200).json({ message: "pong!" });
 
-app.get('/', (_req, res) => {
-  res.status(200).json({ message: "pong!" });
-});
+module.exports = { testResponse };
