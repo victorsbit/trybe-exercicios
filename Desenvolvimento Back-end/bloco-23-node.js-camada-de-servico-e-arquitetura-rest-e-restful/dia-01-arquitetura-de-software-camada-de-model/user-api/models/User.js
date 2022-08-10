@@ -29,4 +29,13 @@ const create = async ({ firstName, lastName, email, password }) => {
   return { id, firstName, lastName, email };
 };
 
-module.exports = { getAll, create };
+const getUserById = async (id) => {
+  const query = 'SELECT * FROM users WHERE id = ?';
+  const [user] = await connection.execute(query, [id]);
+
+  if (user.length === 0) return false;
+
+  return user;
+};
+
+module.exports = { getAll, create, getUserById };
