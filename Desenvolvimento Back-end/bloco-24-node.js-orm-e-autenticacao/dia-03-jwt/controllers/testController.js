@@ -1,26 +1,20 @@
-const jwt = require('jsonwebtoken');
-
-const secret = 'seusecretdetoken';
+const testService = require('../services/testService');
 
 const test = (_req, res) => {
   return res.status(200).json({ message: 'ok!!' });
 }
 
 const login = (req, res) => {
-  const { username, password } = req.body;
-  
-  if (username === 'user', password === 'pass') {
-    const jwtConfig = {
-      expiresIn: '1h',
-      algorithm: 'HS256',
-    };
-  
-    const token = jwt.sign({ data: username }, secret, jwtConfig);
+  try {
+    const { username, password } = req.body;
 
-    return res.status(200).json({ admin: false, token });
+    const { admin, token } = testService.login(username, password);
+    if (!admin && !token) return res.status(400).json({ message: 'nao' });
+
+    return res.status(201).json({ admin, token });
+  } catch (error) {
+    return res.status(500).json({ message: 'not ok!' });
   }
-
-  return res.status(401).json({ message: 'not ok!' });
 }
 
 module.exports = { test, login };
