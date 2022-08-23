@@ -14,4 +14,17 @@ router.get('/', async (_req, res) => {
   }
 });
 
+router.get('/:id', async (req, res) => {
+  try {
+    const { id } = req.params;
+
+    const { code, result } = await bookService.getByID(id);
+
+    return res.status(code).json(result);
+  } catch (error) {
+    console.log(error.message);
+    return res.status(500).json({ message: 'SIKE' });
+  }
+});
+
 module.exports = router;
