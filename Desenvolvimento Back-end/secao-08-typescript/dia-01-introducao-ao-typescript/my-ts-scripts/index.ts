@@ -1,3 +1,5 @@
+// 1
+
 type character = {
   nickname: string;
   class: string;
@@ -36,3 +38,22 @@ createdAt: ${createdAt}`);
 }
 
 characters.forEach(printCharacter);
+
+// 2
+
+enum months {
+  January = 1,
+  February,
+  March,
+  April,
+  May,
+  June,
+  July,
+  August,
+  September,
+  October,
+  November,
+  December
+}
+
+console.log(months);
