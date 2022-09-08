@@ -57,3 +57,12 @@ enum months {
 }
 
 console.log(months);
+
+// 3
+
+enum seasons {
+  cold = 'Winter',
+  sakura = 'Spring',
+  hell = 'Summer',
+  cozy = 'Autumn'
+}
