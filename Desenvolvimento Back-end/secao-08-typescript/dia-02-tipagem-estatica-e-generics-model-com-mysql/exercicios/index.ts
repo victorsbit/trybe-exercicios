@@ -1,4 +1,4 @@
-enum Color {
+enum Colors {
   BLACK = 'Preta',
   WHITE = 'Branca',
   RED = 'Vermelha',
@@ -18,10 +18,12 @@ enum Direction {
 class Car {
   brand: string;
   doors: number;
+  colors: Colors;
 
-  constructor(brand: string, doors: number) {
+  constructor(brand: string, colors: Colors, doors: number) {
     this.brand = brand;
     this.doors = doors;
+    this.colors = colors;
   }
 
   honk(): void {
@@ -60,3 +62,14 @@ class Car {
     console.log(`virando a ${direction}`);
   }
 }
+
+const carrinho = new Car('Hotwheels', Colors.RED, 2);
+
+carrinho.turnOn();
+carrinho.speedUp();
+carrinho.turn(Direction.LEFT);
+carrinho.turn(Direction.RIGHT);
+carrinho.speedUp();
+carrinho.turn(Direction.RIGHT);
+carrinho.speedUp();
+carrinho.turnOff();
